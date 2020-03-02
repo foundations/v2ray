@@ -18,7 +18,13 @@
 				]
 			},
 			"streamSettings": {
-				"network": "ws"
+				"network": "quic",
+				"quicSettings": {
+					"key": "",
+					"header": {
+						"type": "none"
+					}
+				}
 			},
 			"sniffing": {
 				"enabled": true,
@@ -66,7 +72,7 @@
 		]
 	},
 	"routing": {
-		"domainStrategy": "IPOnDemand",
+		"domainStrategy": "IPOnDemand",		
 		"rules": [
 			{
 				"type": "field",
